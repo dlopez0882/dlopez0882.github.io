@@ -120,4 +120,15 @@
 					visibleClass: 'header-visible'
 				});
 
+
+    // open modal
+    // $("#dialog").dialog({
+    //     autoOpen: false
+    //   });
+    $('#trigger').click(function(){
+        $("#dialog").dialog();
+    }); 
+
+
+
 })(jQuery);
