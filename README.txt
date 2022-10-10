@@ -1,1 +1,1 @@
-A simple static website for my portfolio contents.
+A simple static website for my portfolio content.
