@@ -169,6 +169,19 @@
   });
 
   /**
+   * dynamically change bootstrap collapse aria-labels
+   */
+  on('click', '.collapsed', function(e) {
+    let attributeValue = this.getAttribute('aria-label')
+
+    if (attributeValue == 'show more') {
+        this.setAttribute('aria-label', 'show less')
+    } else {
+        this.setAttribute('aria-label', 'show more')
+    }
+  }, true);
+
+  /**
    * Skills animation
    */
   let skilsContent = select('.skills-content');
