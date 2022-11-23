@@ -567,14 +567,14 @@ section .container {
 }
 
 .testimonials .testimonial-item #testimonial-quote2.collapse:not(.show) {
-    display: block;
-    height: 12rem;
-    overflow: hidden;
-  }
+  display: block;
+  height: 12rem;
+  overflow: hidden;
+ }
     
-  .testimonials .testimonial-item #testimonial-quote2.collapsing {
-    height: 12rem;
-  }
+.testimonials .testimonial-item #testimonial-quote2.collapsing {
+  height: 12rem;
+}
 
 .testimonials .testimonial-item #testimonial-quote3.collapse:not(.show) {
   display: block;
