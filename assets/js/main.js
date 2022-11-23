@@ -107,6 +107,34 @@
     }
   }, true)
 
+
+
+  on('click', '#link-to-resume', function(e) {
+    e.preventDefault()
+
+    let navlinks = select('#navbar .nav-link', true)
+    let resumeNavLink = select('#navbar .nav-link[href="#resume"]')
+    let aboutSection = select('#about')
+    let resumeSection = select('#resume')
+
+    navlinks.forEach((item) => {
+        item.classList.remove('active')
+    })
+
+    resumeNavLink.classList.add('active')
+
+    setTimeout(function() {
+        // sections.forEach((item) => {
+        //   item.classList.remove('section-show')
+        // })
+        aboutSection.classList.remove('section-show')
+        resumeSection.classList.add('section-show')
+
+      }, 350);
+
+    scrollto('#resume')
+  })
+
   /**
    * Activate/show sections on load with hash links
    */
