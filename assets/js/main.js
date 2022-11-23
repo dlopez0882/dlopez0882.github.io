@@ -107,8 +107,9 @@
     }
   }, true)
 
-
-
+  /**
+   * Scroll to resume section when href with ID of #link-to-resume is clicked
+   */
   on('click', '#link-to-resume', function(e) {
     e.preventDefault()
 
